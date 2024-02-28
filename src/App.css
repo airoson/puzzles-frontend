@@ -1,38 +1,53 @@
-.App {
+input,
+button {
+  margin: 5px;
+}
+
+.game-field {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background-color: lightgray;
+}
+
+.puzzle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: transparent;
+  user-select: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.puzzles-grid {
+  width: 800px;
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  padding-top:20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.puzzle-holder{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  margin:10px;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.puzzle-in-grid {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  user-select: none;
+  text-align: center;
+  position: relative;
+}
+
+.puzzle-image{
+  position:absolute;
 }
