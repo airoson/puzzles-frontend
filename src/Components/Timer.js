@@ -11,7 +11,7 @@ function Timer(params) {
     let s = seconds - h * 3600 - m * 60;
     return (
         <span>
-            {h}:{m}:{s}
+            {h}:{("0" + m).slice(-2)}:{("0" + s).slice(-2)}
         </span>
     )
 }
