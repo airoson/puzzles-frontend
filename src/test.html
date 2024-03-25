@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test page</title>
+    <style>
+    
+        @media (width > 500px) {
+            .puzzle {
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        @media (width < 500px) {
+            .puzzle {
+                width: 30vh;
+                height: 100%;
+            }
+        }
+
+
+        .field {
+            background: grey;
+            min-width: 1250px;
+            height: 300px;
+            position: relative;
+            text-align: center;
+            overflow-x: scroll;
+        }
+
+        .puzzle {
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <div class="puzzle">
+            PUZ
+        </div>
+        TEXT TEXT TEXT TEXT TEXT
+    </div>
+</body>
+
+</html>
