@@ -52,11 +52,7 @@ img{
 }
 
 .field-holder{
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   height: 100%;
-  /* flex-direction: column; */
   touch-action: none;
 }
 
@@ -67,6 +63,6 @@ img{
 .image-holder{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
